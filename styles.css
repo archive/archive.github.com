@@ -1,0 +1,45 @@
+html,
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	background:#ccc;
+}
+
+html {
+	display:table;
+}
+
+body {
+	display:table-cell;
+	vertical-align:middle;
+	font-size: 62.5%;
+	background-color: #EEE;
+	color: #262626;
+}
+
+#content {
+	max-width:114em;
+	margin:0 auto;
+	padding:1em;
+	color:#000;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: bold; 
+	font-size: 10em;
+	font-family: sans-serif;
+	line-height: 1.1em;
+	text-shadow: #7D7D7D 3px 3px 5px;
+}
+
+img {
+	background-color: #f7f7f7;
+	border-radius: 8px;
+	padding: 6px;
+	box-shadow: #7D7D7D 3px 3px 5px;
+}
+
+
+
