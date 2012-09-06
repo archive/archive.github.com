@@ -11,7 +11,6 @@ body {
 	height:100%;
 	margin:0;
 	padding:0;
-	background:#ccc;
 	font-size: 62.5%;
 }
 
@@ -23,26 +22,24 @@ body {
 	display:table-cell;
 	vertical-align:middle;	
 	background-color: #EEE;
-	color: #262626;
+	color: #88a65e; 
 }
 
 #content {
 	margin:0 auto;
 	padding:1em;
-	color:#000;
+	
 }
 
 h1, h2, h3, h4, h5, p, nav {
 	font-weight: bold; 
 	font-family: 'Yanone Kaffeesatz Bold', sans-serif;
-	text-shadow: #7D7D7D 3px 3px 5px;
 }
 
 img {
 	background-color: #f7f7f7;
 	border-radius: 8px;
 	padding: 6px;
-	box-shadow: #7D7D7D 3px 3px 5px;
 }
 
 @media only screen and (max-width : 320px) {
@@ -84,8 +81,3 @@ img {
 		letter-spacing: 0.03em;
 	}
 }
-
-
-
-
-
