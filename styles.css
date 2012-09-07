@@ -33,14 +33,14 @@ body {
 
 h1, h2, h3, h4, h5, p, nav {
 	font-family: 'Yanone Kaffeesatz Bold', sans-serif;
-	text-shadow: #7D7D7D 3px 3px 5px;
+	text-shadow: #FFFFFF 0px 3px 0px;
 }
 
 img {
-	background-color: #f7f7f7;
+	background-color: #FFFFFF;
 	border-radius: 8px;
 	padding: 6px;
-	box-shadow: #7D7D7D 3px 3px 5px;
+	border: 1px solid #D5D5D5;
 }
 
 @media only screen and (max-width : 320px) {
