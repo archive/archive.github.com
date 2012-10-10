@@ -1,9 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
+html {
+  /*-webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;*/
+  font-size: 100%; /* change to 62.5%;*/
+}
+
 body {
 	background-color: #eee;
-	color: #262626;
-	font-size: 62.5%;
+	color: #262626;	
 	padding: 1rem;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -62,6 +68,7 @@ b {
 #tree {
 	max-width: 60%;
 	padding: 1rem 0.7rem 1rem 0rem;
+	opacity: 0.9;
 }
 
 nav ul {
@@ -86,11 +93,35 @@ a, a:active, a:focus, a:hover, a:visited {
 	clear: both;
 }
 
-@media only screen and (min-width: 561px) {
+@media only screen and (min-width: 561px) { /* rem */
 
-	#page {
-		width: 40rem;
-		margin: 0 auto;
+	#tree {
+		max-width: 40%;
+		float: left;
 	}
+
+	html {
+		font-size: 140%;
+	}
+
+	nav ul li {
+		width: 25%;
+	}
+
+	article {
+		width: 40rem;
+	}
+
+	section p {
+		padding: 1rem 0.7rem 1rem 0rem;
+	}
+}
+
+@media only screen and (min-width: 1025px) { /* rem */
+
+	html {
+		font-size: 180%;
+	}
+
 
 }
