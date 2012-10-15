@@ -115,7 +115,7 @@ a, a:active, a:focus, a:hover, a:visited {
 
 @media only screen and (min-width: 56.1em) { 
 	#tree {
-		max-width: 40%;
+		max-width: 35%;
 		float: left;
 	}
 
