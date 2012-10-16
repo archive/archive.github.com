@@ -5,11 +5,14 @@
 	<title>Anders Jönsson</title>
 	<meta name="description" content="Anders Jönsson is an awesome web developer and an agile advocator">
 	<meta name="author" content="Anders Jönsson">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png">
 	<!-- Ha, concatenate and minify... -->
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<!--[if lt IE 9]>
+	<script src="scripts/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<!--
@@ -24,29 +27,44 @@
 		(_______/(_______)(______/ (_______/(_)
 											   
 	-->
-	<article id="content">
-		<p>
-			Hi
-		</p>
-		<h1>
-			I'm Anders Jönsson
-		</h1>
-		<h2>
-			I'm a web developer
-		</h2>
-		<h3>
-			I love web and agile
-		</h3>
-		<nav>
-			<a href="http://twitter.com/anjonsson"><img src="twitter1.png" alt="twitter #anjonsson"></a>
-			<a href="http://andersjonsson.blogspot.com"><img src="blogger1.png" alt="blog andersjonsson.blogspot.com"></a>
-			<a href="http://github.com/archive"><img src="github1.png" alt="github archive"></a>
-			<a href="http://se.linkedin.com/pub/anders-jönsson/1a/b64/59a"><img src="linkedin1.png" alt="cv Anders Jönsson"></a>			
-		</nav>
-	<article>
+	<div id="page">
+		<article>
+			<header>
+				<h1>Anders Jönsson</h1>
+				<span>- I love web and agile -</span>
+			</header>
+			<img src="images/tree.png" id="tree">
+			<section>
+				<p>
+					Hi, I'm <b>Anders</b>. I'm a <b>web developer</b> with a passion for <b>front-end</b> and <b>agile</b>. I create web applications, <b>coach</b> teams in <b>agile</b> meth&shy;odologies and <b>develop&shy;ment practices</b>, give <b>talks</b> to user groups/companies and more.
+				</p>
+			</section>
+			<span class="fleuron"></span>
+			<nav class="clearfix">
+				<ul>
+					<li>
+						<a href="http://twitter.com/anjonsson">thoughts</a>
+					</li>
+					<li>
+						<a href="http://se.linkedin.com/pub/anders-jönsson/1a/b64/59a">work</a>			
+					</li>
+					<li>
+						<a href="http://github.com/archive">code</a>
+					</li>
+					<li>
+						<a href="http://andersjonsson.blogspot.com">writings</a>
+					</li>
+				</ul>
+			</nav>
+		</article>
+		<div class="clearfix"></div>
+	</div>
 
 	<script type="text/javascript">
-		var _gaq = _gaq || [];
+
+		window.scrollTo(0, 1);
+
+		/*var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-34649514-1']);
 		_gaq.push(['_trackPageview']);
 
@@ -54,7 +72,8 @@
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+		})();*/
+
 	</script>		
 </body>
 </html>
