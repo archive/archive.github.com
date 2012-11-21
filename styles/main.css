@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
+#me {
+	display: none;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
