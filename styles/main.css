@@ -88,7 +88,7 @@ nav ul {
 
 nav ul li {
 	float: left;
-	width: 50%;
+	width: 33%;
 	text-align: center;
 	padding: 0.8rem 0 0 0;
 }
@@ -106,10 +106,6 @@ a, a:active, a:focus, a:hover, a:visited {
 @media only screen and (min-width: 40em) { 
 	html {
 		font-size: 90%;
-	}
-
-	nav ul li {
-		width: 25%;
 	}
 }
 
