@@ -1,0 +1,1 @@
+sass --watch master.scss:master.css --style compressed

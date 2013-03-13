@@ -1,0 +1,481 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+@mixin prefix($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+// Change to https://github.com/bitmanic/rem?
+@mixin rem($property, $remValue) {
+	#{$property}: ($remValue * 10) + px;
+	#{$property}: $remValue + rem;
+}
+
+@mixin justify {
+	text-align:justify;
+	@include prefix(hyphens, auto);
+}
+
+@mixin gradient-vertical($from, $to) {
+	// Based on https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
+	background-color: $from;
+	background-image: -moz-linear-gradient(top, $from, $to); // FF 3.6+
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to)); // Safari 4+, Chrome 2+
+	background-image: -webkit-linear-gradient(top, $from, $to); // Safari 5.1+, Chrome 10+
+	background-image: -o-linear-gradient(top, $from, $to); // Opera 11.10
+	background-image: linear-gradient(to bottom, $from, $to); // Standard, IE10
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($from)}', endColorstr='#{ie-hex-str($to)}', GradientType=0); // IE9 and down
+}
+
+@mixin font ($size) {
+	@include rem(font-size, $size);
+	@include rem(line-height, $size * 1.618);
+}
+
+$lightenPercent: 3%;
+
+$aaa: #053B44; 
+$aaa_: lighten($aaa, $lightenPercent); 
+
+$bbb: #06736C; 
+$bbb_: lighten($bbb, $lightenPercent); 
+
+$ccc: #A53539; 
+$ccc_: lighten($ccc, $lightenPercent); 
+
+$ddd: #B9543C; 
+$ddd_: lighten($ddd, $lightenPercent); 
+
+$eee: #EAD075;
+$eee_: lighten($eee, $lightenPercent); 
+
+$serif: 'Lora', 'Georgia', 'serif';
+$sans-serif: 'Lucida Sans Unicode', 'Lucida Grande', 'sans-serif';
+$base-font-color: #262626;
+
+#me {
+	display: none;
+}
+
+* { 
+	@include prefix(box-sizing, border-box);
+}
+
+html {
+	@include prefix(font-smoothing, antialiased);
+	@include prefix(text-size-adjust, 100%);
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #f9f9f9;
+	color: $base-font-color;
+}
+
+b {
+	font-weight: 700;
+}
+
+.clearfix {
+	clear: both;
+}
+
+a {
+	&:link, &:visited, &:hover, &:active {
+		text-decoration: none;	
+		color: #fff;
+	}
+}
+
+.border-top {
+	height: 10px;	
+	width: 100%;
+	display: inline-block;
+	float: left;
+	margin: 0;
+	background-color: $aaa;
+	border-bottom: 1px solid #e9e9e9;
+
+	&.extra {
+		display: none;
+	}
+
+	div {
+		height: 100%;
+		display: inline-block;
+		float: left;
+
+		&.aaa {
+			@include gradient-vertical($aaa_,$aaa);
+			width: 15%;
+		}
+				
+		&.bbb {
+			@include gradient-vertical($bbb_,$bbb);
+			width: 25%;
+		}
+		
+		&.ccc {
+			@include gradient-vertical($ccc_,$ccc);
+			width: 30%;
+		}
+		
+		&.ddd {
+			@include gradient-vertical($ddd_,$ddd);
+			width: 20%;
+		}
+
+		&.eee {
+			@include gradient-vertical($eee_,$eee);
+			width: 10%;
+		}
+	}
+}
+
+article {
+	@include rem(margin-bottom, 4);
+
+	b {
+		color: $aaa;
+	}
+}
+
+#page {
+	margin: 0 1rem;
+	clear: both;
+}
+
+h1, h2 {
+	font-family: $sans-serif;
+	text-shadow: #FFFFFF 0px 2px 0px;
+	font-weight: 400;
+	color: $base-font-color;
+}
+
+h1 {
+	@include font(2.8);
+	text-align: center;
+	@include rem(padding-top, 2);
+	@include rem(margin-bottom, 2);
+}
+
+h2 {
+	@include font(2);
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+p, figcaption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+p, figcaption, dd, dt {
+	font-family: $serif;
+	@include font(1.8);
+}
+
+li {
+	@include font(1.4);
+}
+
+#about {
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+
+	h2 {		
+		font-family: $serif;
+		word-wrap: break-word;
+		margin: 1rem 0;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		background-color: $bbb;
+		height: 1px;	
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		background-color: $bbb;
+		height: 1px;	
+	}	
+}
+
+#values {
+
+}
+
+.list-header {
+	margin-bottom: 0;
+}
+
+.colored-list {
+	padding: 0;
+
+	li {
+		font-family: $sans-serif;
+		padding: 0.2rem 0.6rem;
+		display: inline-block;
+		border-radius: 4px;
+		color: #fff;
+		text-shadow: 0 1px rgba(0,0,0,0.1);
+		margin: 0.3rem 0.2rem;
+
+		&:nth-child(1n+1) { 
+			@include gradient-vertical($aaa_,$aaa);
+		} 
+		&:nth-child(2n+2) { 
+			@include gradient-vertical($bbb_,$bbb);
+		} 
+		&:nth-child(3n+3) { 
+			@include gradient-vertical($ccc_,$ccc);
+		} 
+		&:nth-child(4n+4) { 
+			@include gradient-vertical($ddd_,$ddd);
+		} 
+		&:nth-child(5n+5) { 
+			@include gradient-vertical($eee_,$eee);
+			a {
+				color: #313131;
+			}
+		} 
+	}
+}
+
+.extra-gutter-right {
+	padding-right: 1rem;
+	padding-left: 0.3rem;
+}
+
+.extra-gutter-left {
+	padding-left: 1rem;
+	padding-right: 0.3rem;
+}
+
+#portfolio {
+	
+	overflow: hidden;
+
+	figure {
+		display: block;
+		width: 100%;
+		padding-bottom: 3rem;
+
+		a {
+			display: block;
+		}
+
+		img {		
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.arrow {
+	$boxShadowColor: #ebebeb;
+
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	background: #fff;
+	padding: 1rem;
+	position: relative;
+	margin-bottom: 1.5rem;
+	@include prefix(box-shadow, 2px 2px 3px $boxShadowColor);
+	text-align: center;
+
+	&:after {
+		width: 14px;
+		height: 14px;
+		content: '';
+		left: 50%;
+		margin-left: -7px;
+		bottom: -8px;
+		position: absolute;
+
+		border-left: 1px solid #cecece;
+		border-bottom: 1px solid #cecece;
+		background-color: #fff;
+		border-bottom-left-radius: 3px;
+		@include prefix(box-shadow, -2px 2px 3px $boxShadowColor);
+		@include prefix(transform, rotate(-45deg));
+	}
+}
+
+#sayings {
+	overflow: hidden;
+
+	dl {
+		padding-bottom: 3rem;
+
+		dt {
+			font-style: italic;
+		}
+
+		dd {
+			@include prefix(margin-start, 0);
+			padding-left: 25%;
+			font-family: $sans-serif;
+		}
+	}
+
+}
+
+#contact {
+
+}
+
+section {
+	&:after {
+		content: '';
+		width: 32px;
+		height: 50px;
+		background-image: url('../images/fleuron.png');
+		background-repeat: no-repeat;
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: -16px;
+	}
+}
+
+.indiana-jones-browser {
+	background-color: #FF5555; 
+	color: #ffffff; 
+	border-top: 1px 
+	solid #FF0D0D; 
+	padding: 40px 10px;
+	margin-top: 80px;
+	text-align: center;
+	font-size: 28px;
+}
+
+// 100% = 1 em ~= 16px ~= 14pt
+// 10px	0.625em
+$emRatio: 16;
+
+@mixin mq1 {
+	.colored-list {
+		li {
+			padding: 0.6rem 1.6rem;
+			margin: 0.6rem 0.5rem;
+		}
+	}	
+}
+
+@media all and (min-width: (320/$emRatio) + em) { 
+	@include mq1;
+}
+
+@mixin mq2 {
+	html {
+		font-size: 72.5%;
+	}
+
+	h2 {
+		@include font(2.2);
+	}
+
+	.border-top {
+		width: 50%;
+
+		&.extra {
+			display: block;
+		}
+	}
+
+	#portfolio {
+		figure {
+			width: 50%;
+			display: inline-block;
+			float: left;
+		}
+	}
+
+	#sayings {
+		dl {
+			float: left;
+			width: 50%;
+
+			.first {
+				margin-right: 1rem;
+				margin-left: 0.4rem;
+			}
+
+			.last {
+				margin-left: 1rem;
+				margin-right: 0.4rem;
+			}			
+		}
+	}
+
+	section {
+		&:after {
+			display: none;
+		}
+	}	
+}
+
+@media all and (min-width: (720/$emRatio) + em) { 
+	@include mq2;
+}
+
+@mixin mq3 {
+	#page {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	#portfolio {
+		figure {
+			padding-bottom: 0rem;
+		}
+	}
+
+	#sayings {
+		dl {
+			padding-bottom: 0rem;
+		}
+	}
+
+	#contact {
+		ul {
+			text-align: center;
+
+			li {
+				width: 23%;
+			}
+		}
+	}	
+}
+
+@media all and (min-width: (960/$emRatio) + em) { 
+	@include mq3;
+}
+
+#media-queries-enabled {
+	visibility: hidden;
+	width: 1px;
+	height: 0;
+	display: block;
+}
+
+@media all and (min-width: 1px) { 
+	#media-queries-enabled {
+		width: 0;
+	}
+}
+
+.ie-lt-9 {
+	@include mq1;
+	@include mq2;
+	@include mq3;
+}
