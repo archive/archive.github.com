@@ -57,7 +57,7 @@ $serif: 'Lora', 'Georgia', 'serif';
 $sans-serif: 'Lucida Sans Unicode', 'Lucida Grande', 'sans-serif';
 $base-font-color: #262626;
 
-#me {
+.me {
 	display: none;
 }
 
@@ -144,7 +144,7 @@ article {
 	}
 }
 
-#page {
+.page {
 	margin: 0 1rem;
 	clear: both;
 }
@@ -184,7 +184,7 @@ li {
 	@include font(1.4);
 }
 
-#about {
+.about {
 	border-top: 1px solid #e9e9e9;
 	border-bottom: 1px solid #e9e9e9;
 
@@ -209,25 +209,23 @@ li {
 	}	
 }
 
-#values {
-
-}
-
 .list-header {
 	margin-bottom: 0;
 }
 
 .colored-list {
 	padding: 0;
+	text-align: center;
 
 	li {
+		padding: 0.4rem 0.8rem;
+		margin: 0.4rem 0.3rem;
 		font-family: $sans-serif;
-		padding: 0.2rem 0.6rem;
 		display: inline-block;
 		border-radius: 4px;
 		color: #fff;
 		text-shadow: 0 1px rgba(0,0,0,0.1);
-		margin: 0.3rem 0.2rem;
+		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
 
 		&:nth-child(1n+1) { 
 			@include gradient-vertical($aaa_,$aaa);
@@ -251,16 +249,16 @@ li {
 }
 
 .extra-gutter-right {
-	padding-right: 1rem;
-	padding-left: 0.3rem;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .extra-gutter-left {
-	padding-left: 1rem;
-	padding-right: 0.3rem;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-#portfolio {
+.portfolio {
 	
 	overflow: hidden;
 
@@ -310,7 +308,7 @@ li {
 	}
 }
 
-#sayings {
+.sayings {
 	overflow: hidden;
 
 	dl {
@@ -326,10 +324,6 @@ li {
 			font-family: $sans-serif;
 		}
 	}
-
-}
-
-#contact {
 
 }
 
@@ -371,7 +365,7 @@ $emRatio: 16;
 	}	
 }
 
-@media all and (min-width: (320/$emRatio) + em) { 
+@media all and (min-width: (400/$emRatio) + em) { 
 	@include mq1;
 }
 
@@ -392,7 +386,7 @@ $emRatio: 16;
 		}
 	}
 
-	#portfolio {
+	.portfolio {
 		figure {
 			width: 50%;
 			display: inline-block;
@@ -400,7 +394,7 @@ $emRatio: 16;
 		}
 	}
 
-	#sayings {
+	.sayings {
 		dl {
 			float: left;
 			width: 50%;
@@ -422,6 +416,16 @@ $emRatio: 16;
 			display: none;
 		}
 	}	
+
+	.extra-gutter-right {
+		padding-right: 1rem;
+		padding-left: 0.3rem;
+	}
+
+	.extra-gutter-left {
+		padding-left: 1rem;
+		padding-right: 0.3rem;
+	}
 }
 
 @media all and (min-width: (720/$emRatio) + em) { 
@@ -429,24 +433,24 @@ $emRatio: 16;
 }
 
 @mixin mq3 {
-	#page {
+	.page {
 		max-width: 960px;
 		margin: 0 auto;
 	}
 
-	#portfolio {
+	.portfolio {
 		figure {
 			padding-bottom: 0rem;
 		}
 	}
 
-	#sayings {
+	.sayings {
 		dl {
 			padding-bottom: 0rem;
 		}
 	}
 
-	#contact {
+	.contact {
 		ul {
 			text-align: center;
 
@@ -461,7 +465,7 @@ $emRatio: 16;
 	@include mq3;
 }
 
-#media-queries-enabled {
+.media-queries-enabled {
 	visibility: hidden;
 	width: 1px;
 	height: 0;
@@ -469,7 +473,7 @@ $emRatio: 16;
 }
 
 @media all and (min-width: 1px) { 
-	#media-queries-enabled {
+	.media-queries-enabled {
 		width: 0;
 	}
 }
