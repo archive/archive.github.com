@@ -206,7 +206,11 @@ li {
 		display: block;
 		background-color: $bbb;
 		height: 1px;	
-	}	
+	}
+}
+
+a.paragraph-link {
+	color: $base-font-color;
 }
 
 .list-header {
@@ -308,7 +312,7 @@ li {
 	}
 }
 
-.sayings {
+.quotes {
 	overflow: hidden;
 
 	dl {
@@ -326,6 +330,23 @@ li {
 	}
 
 }
+
+/*$me-size: 70px;
+$me-size-with-extra: $me-size + 10;
+.anders-jonsson-logo {
+	display: inline-block;
+	height: $me-size;
+	width: $me-size;
+	background-image: url('../images/anders-jonsson.jpg');
+	background-size: $me-size $me-size;
+	background-repeat: no-repeat;
+	border-radius: $me-size / 2;	
+}
+
+.anders-jonsson-text {
+	display: inline-block;
+	height: $me-size;
+}*/
 
 section {
 	&:after {
@@ -394,7 +415,7 @@ $emRatio: 16;
 		}
 	}
 
-	.sayings {
+	.quotes {
 		dl {
 			float: left;
 			width: 50%;
@@ -444,7 +465,7 @@ $emRatio: 16;
 		}
 	}
 
-	.sayings {
+	.quotes {
 		dl {
 			padding-bottom: 0rem;
 		}
