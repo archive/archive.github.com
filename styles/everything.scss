@@ -486,7 +486,7 @@ $emRatio: 16;
 	@include mq3;
 }
 
-.media-queries-enabled {
+#media-queries-enabled {
 	visibility: hidden;
 	width: 1px;
 	height: 0;
@@ -494,7 +494,7 @@ $emRatio: 16;
 }
 
 @media all and (min-width: 1px) { 
-	.media-queries-enabled {
+	#media-queries-enabled {
 		width: 0;
 	}
 }
