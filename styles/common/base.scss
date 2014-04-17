@@ -1,0 +1,100 @@
+$serif: 'Lora', 'Georgia', 'serif';
+$sans-serif: 'Lucida Sans Unicode', 'Lucida Grande', 'sans-serif';
+$base-font-color: #262626;
+
+* {
+	@include prefix(box-sizing, border-box);
+}
+
+html {
+	@include prefix(font-smoothing, antialiased);
+	@include prefix(text-size-adjust, 100%);
+	font-size: 62.5%;
+
+	@include media(large) {
+		font-size: 72.5%;
+	}
+}
+
+body {
+	background-color: #f9f9f9;
+	color: $base-font-color;
+}
+
+b {
+	font-weight: 700;
+}
+
+.clearfix {
+	clear: both;
+}
+
+a {
+	&:link, &:visited, &:hover, &:active {
+		text-decoration: none;
+		color: $base-font-color;
+	}
+}
+
+h1, h2 {
+	font-family: $sans-serif;
+	text-shadow: #FFFFFF 0px 2px 0px;
+	font-weight: 400;
+	color: $base-font-color;
+}
+
+h1 {
+	@include font(2.8);
+	text-align: center;
+	@include rem(padding-top, 2);
+	@include rem(margin-bottom, 2);
+}
+
+h2 {
+	@include font(2);
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	@include media(large) {
+		@include font(2.2);
+	}
+}
+
+p, figcaption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+p, figcaption, dd, dt {
+	font-family: $serif;
+	@include font(1.8);
+}
+
+li {
+	@include font(1.4);
+}
+
+.indiana-jones-browser {
+	background-color: #FF5555;
+	color: #ffffff;
+	border-top: 1px
+	solid #FF0D0D;
+	padding: 40px 10px;
+	margin-top: 80px;
+	text-align: center;
+	font-size: 28px;
+}
+
+ul, ol, figure {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+

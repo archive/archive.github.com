@@ -1,0 +1,24 @@
+.about {
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+
+	h2 {
+		font-family: $serif;
+		word-wrap: break-word;
+		margin: 1rem 0;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		background-color: $bbb;
+		height: 1px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		background-color: $bbb;
+		height: 1px;
+	}
+}

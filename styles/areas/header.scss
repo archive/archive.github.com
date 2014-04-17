@@ -1,0 +1,58 @@
+.border-top {
+	height: 10px;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	margin: 0;
+	background-color: $aaa;
+	border-bottom: 1px solid #e9e9e9;
+
+
+
+	&.extra {
+		display: none;
+	}
+
+	div {
+		height: 100%;
+		display: inline-block;
+		float: left;
+
+		&.aaa {
+			@include gradient-vertical($aaa_,$aaa);
+			width: 15%;
+		}
+
+		&.bbb {
+			@include gradient-vertical($bbb_,$bbb);
+			width: 25%;
+		}
+
+		&.ccc {
+			@include gradient-vertical($ccc_,$ccc);
+			width: 30%;
+		}
+
+		&.ddd {
+			@include gradient-vertical($ddd_,$ddd);
+			width: 20%;
+		}
+
+		&.eee {
+			@include gradient-vertical($eee_,$eee);
+			width: 10%;
+		}
+	}
+
+	@include media(large) {
+		width: 50%;
+
+		&.extra {
+			display: block;
+		}
+	}
+}
+
+a.paragraph-link {
+	color: $base-font-color;
+}

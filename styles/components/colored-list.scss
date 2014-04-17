@@ -1,0 +1,46 @@
+.colored-list {
+	padding: 0;
+	text-align: center;
+
+	li {
+		padding: 0.4rem 0.8rem;
+		margin: 0.4rem 0.3rem;
+		font-family: $sans-serif;
+		display: inline-block;
+		border-radius: 4px;
+		color: #fff;
+		text-shadow: 0 1px rgba(0,0,0,0.1);
+		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
+
+		&:nth-child(1n+1) {
+			@include gradient-vertical($aaa_,$aaa);
+		}
+		&:nth-child(2n+2) {
+			@include gradient-vertical($bbb_,$bbb);
+		}
+		&:nth-child(3n+3) {
+			@include gradient-vertical($ccc_,$ccc);
+		}
+		&:nth-child(4n+4) {
+			@include gradient-vertical($ddd_,$ddd);
+		}
+		&:nth-child(5n+5) {
+			@include gradient-vertical($eee_,$eee);
+			a {
+				color: #313131;
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+	}
+
+	@include media(medium) {
+		li {
+			padding: 0.6rem 1.6rem;
+			margin: 0.6rem 0.5rem;
+		}
+	}
+}
+

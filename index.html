@@ -3,12 +3,17 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Anders Jönsson</title>
-	<meta name="description" content="Anders Jönsson is an awesome web developer and an agile advocator">
+	<title>Anders Jönsson - web developer and agile coach</title>
+	<meta name="description" content="Anders Jönsson is an awesome web developer and an agile coach">
+	<meta name="keywords" content="developer, frontend developer, front-end developer, web, agile coach, kanban coach, developer coach, clean code, responsive web design, web architecture">
+    <meta name="google-site-verification" content="DDd1d5FG0Czdgg0J4p3Mubt1ieA_0Erj0OPwPQC3M7g" />
+    <meta name="robots" content="index, follow">
 	<meta name="author" content="Anders Jönsson">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="styles/master.css">
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/output/app.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<!--[if lt IE 9]>
 	<script src="scripts/html5shiv.js"></script>
 	<![endif]-->
@@ -84,16 +89,75 @@
 		</article>
 
 		<article class="portfolio">
-			<h2>Recent projects</h2>
-			<p>These are my latest projects, for more projects please see my linkedin profile or contact me.</p>
-			<figure class="extra-gutter-right">
-				<a class="arrow" href="images/portfolio/kambi.jpg"><img src="images/portfolio/kambi-small-prog.jpg" class="portfolio" alt="kambi"></a>
-				<figcaption><b>Kambi</b> - Mobile optimized web application for sports betting (Unibet, Paf, etc). Delivering a great user experience for mobile punters, tailored for IOS and Andriod devices. </figcaption>
-			</figure>
-			<figure class="extra-gutter-left">
-				<a class="arrow" href="images/portfolio/cint.jpg"><img src="images/portfolio/cint-small-prog.jpg" class="portfolio" alt="cint"></a>
-				<figcaption><b>Cint</b> - Web application for Cint's world leading solution for gaining market insight.</figcaption>
-			</figure>
+			<h2>Recent projects/talks</h2>
+			<p>These are my latest projects/talks, for more please see my linkedin profile or contact me.</p>
+			<ul>
+				<li class="extra-gutter-right">
+					<figure>
+						<a href="http://next.tradera.com">
+							<div class="arrow">
+								<img src="images/portfolio/tradera-small-prog.jpg" class="portfolio" alt="Tradera (eBay)">
+							</div>
+							<figcaption><b>Tradera (eBay)</b> - Responsive auction/retail site for Tradera, the Swedish eBay site. Giving the users a great experiences regardless of the device form factors</figcaption>
+						</a>
+					</figure>
+				</li>
+
+				<li class="extra-gutter-left">
+					<figure>
+						<a href="https://github.com/archive/sthlm_js-pjax">
+							<div class="arrow">
+								<img src="images/portfolio/pjax-small-prog.jpg" class="portfolio" alt="sthlm.js">
+							</div>
+							<figcaption><b>A Pjax Story</b> - A architecture/best practices talk about Pjax (pushState + AJAX) at a sthlm.js meetup</figcaption>
+						</a>
+					</figure>
+				</li>
+
+				<li class="extra-gutter-right">
+					<figure>
+						<a href="images/portfolio/kambi.jpg">
+							<div class="arrow">
+								<img src="images/portfolio/kambi-small-prog.jpg" class="portfolio" alt="Kambi Sports Solutions">
+							</div>
+							<figcaption><b>Kambi Sports Solutions</b> - Mobile (responsive) optimized web application for sports betting (Unibet, Paf, etc). Delivering a great user experience for mobile punters, tailored for IOS and Andriod devices</figcaption>
+						</a>
+					</figure>
+				</li>
+
+				<li class="extra-gutter-left">
+					<figure>
+						<a href="https://rawgit.com/archive/talk-dev-practises/master/slides/index.html">
+							<div class="arrow">
+								<img src="images/portfolio/practices-small-prog.jpg" class="portfolio" alt="Development Principles, Patterns and Practices">
+							</div>
+							<figcaption><b>Development Principles, Patterns and Practices</b> - A custom talk for a client about some specific development Principles, patterns and practices topics</figcaption>
+						</a>
+					</figure>
+				</li>
+
+				<li class="extra-gutter-right">
+					<figure>
+						<a href="images/portfolio/cint.jpg">
+							<div class="arrow">
+								<img src="images/portfolio/cint-small-prog.jpg" class="portfolio" alt="Cint">
+							</div>
+							<figcaption><b>Cint</b> - Web application for Cint's world leading solution for gaining market insight</figcaption>
+						</a>
+					</figure>
+				</li>
+
+				<li class="extra-gutter-left">
+					<figure>
+						<a href="https://github.com/archive/talk-views-and-jasminejs">
+							<div class="arrow">
+								<img src="images/portfolio/jasmine-small-prog.jpg" class="portfolio" alt="Give Your Views A Bit Of Love With Jasmine.js">
+							</div>
+							<figcaption><b>Give Your Views A Bit Of Love With Jasmine.js</b> - A talk about how to use Jasmine.js to drive the design and test your views at a #08wm meetup</figcaption>
+						</a>
+					</figure>
+				</li>
+			</ul>
 		</article>
 
 		<article class="quotes">
@@ -127,7 +191,7 @@
 
 	</section>
 
-	<span id="media-queries-enabled"></span>
+	<span class="media-queries-enabled"></span>
 
 	<script type="text/javascript">
 		if (document.getElementById('media-queries-enabled').offsetWidth !== 0) {

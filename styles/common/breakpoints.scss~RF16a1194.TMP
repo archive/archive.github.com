@@ -1,0 +1,40 @@
+// 100% = 1 em ~= 16px ~= 14pt
+// 10px	0.625em
+$emRatio: 16;
+
+/*$breakpointMedium: (min-width: (400/$emRatio) + em);
+$breakpointLarge: (min-width: (720/$emRatio) + em);
+$breakpointXtraLarge: (min-width: (960/$emRatio) + em);*/
+
+$breakpoints: (
+	medium: (400/$emRatio) + em,
+	large: (720/$emRatio) + em,
+	xtraLarge: (960/$emRatio) + em
+);
+
+@mixin media($breakpoint) {
+
+	@media all and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+		@content;
+	}
+
+}
+
+#media-queries-enabled {
+	visibility: hidden;
+	width: 1px;
+	height: 0;
+	display: block;
+}
+
+@media all and (min-width: 1px) {
+	#media-queries-enabled {
+		width: 0;
+	}
+}
+
+/*.ie-lt-9 {
+	@include mq1;
+	@include mq2;
+	@include mq3;
+}*/

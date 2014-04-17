@@ -1,0 +1,17 @@
+$lightenPercent: 3%;
+
+$aaa: #053B44;
+$aaa_: lighten($aaa, $lightenPercent);
+
+$bbb: #06736C;
+$bbb_: lighten($bbb, $lightenPercent);
+
+$ccc: #A53539;
+$ccc_: lighten($ccc, $lightenPercent);
+
+$ddd: #B9543C;
+$ddd_: lighten($ddd, $lightenPercent);
+
+$eee: #EAD075;
+$eee_: lighten($eee, $lightenPercent);
+

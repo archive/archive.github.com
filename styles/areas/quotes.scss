@@ -1,0 +1,42 @@
+
+.quotes {
+	overflow: hidden;
+
+	dl {
+		padding-bottom: 3rem;
+
+		dt {
+			font-style: italic;
+		}
+
+		dd {
+			@include prefix(margin-start, 0);
+			padding-left: 25%;
+			font-family: $sans-serif;
+		}
+	}
+
+	@include media(large) {
+		dl {
+			float: left;
+			width: 50%;
+
+			.first {
+				margin-right: 1rem;
+				margin-left: 0.4rem;
+			}
+
+			.last {
+				margin-left: 1rem;
+				margin-right: 0.4rem;
+			}
+		}
+	}
+
+	@include media(xtraLarge) {
+		dl {
+			padding-bottom: 0rem;
+		}
+	}
+
+}
