@@ -363,17 +363,24 @@ th {
 @media all and (min-width: 1px) {
   .media-queries-enabled {
     width: 0; } }
-/*.ie-lt-9 {
-	@include mq1;
-	@include mq2;
-	@include mq3;
-}*/
+.indiana-jones-browser {
+  background-color: #FF5555;
+  color: #ffffff;
+  border-top: 1px solid #FF0D0D;
+  padding: 40px 10px;
+  text-align: center;
+  font-size: 28px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -387,6 +394,8 @@ html {
   -o-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-size: 62.5%; }
+  .ie-lt-9 {
+    font-size: 72.5%; }
   @media all and (min-width: 45em) {
     html {
       font-size: 72.5%; } }
@@ -429,6 +438,11 @@ h2 {
   line-height: 3.236rem;
   margin-bottom: 0;
   padding-bottom: 0; }
+  .ie-lt-9 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 35.596px;
+    line-height: 3.5596rem; }
   @media all and (min-width: 45em) {
     h2 {
       font-size: 22px;
@@ -454,15 +468,6 @@ li {
   line-height: 22.652px;
   line-height: 2.2652rem; }
 
-.indiana-jones-browser {
-  background-color: #FF5555;
-  color: #ffffff;
-  border-top: 1px solid #FF0D0D;
-  padding: 40px 10px;
-  margin-top: 80px;
-  text-align: center;
-  font-size: 28px; }
-
 ul, ol, figure {
   margin: 0;
   padding: 0; }
@@ -483,6 +488,7 @@ li {
     border-radius: 4px;
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #07827a;
     -webkit-box-shadow: 1px 1px 2px #d6d7d0;
     -moz-box-shadow: 1px 1px 2px #d6d7d0;
     -ms-box-shadow: 1px 1px 2px #d6d7d0;
@@ -537,6 +543,9 @@ li {
         color: #313131; }
   .colored-list a {
     color: #fff; }
+  .ie-lt-9 li {
+    padding: 0.6rem 1.6rem;
+    margin: 0.6rem 0.5rem; }
   @media all and (min-width: 25em) {
     .colored-list li {
       padding: 0.6rem 1.6rem;
@@ -645,6 +654,10 @@ li {
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECD582', endColorstr='#FFEAD075', GradientType=0);
       width: 10%; }
+  .ie-lt-9 {
+    width: 50%; }
+    .ie-lt-9.extra {
+      display: block; }
   @media all and (min-width: 45em) {
     .border-top {
       width: 50%; }
@@ -676,6 +689,9 @@ a.paragraph-link {
   padding-right: 0;
   padding-left: 0;
   clear: both; }
+  .ie-lt-9 {
+    padding-right: 1rem;
+    padding-left: 0.3rem; }
   @media all and (min-width: 45em) {
     .extra-gutter-right {
       padding-right: 1rem;
@@ -684,6 +700,9 @@ a.paragraph-link {
 .extra-gutter-left {
   padding-left: 0;
   padding-right: 0; }
+  .ie-lt-9 {
+    padding-left: 1rem;
+    padding-right: 0.3rem; }
   @media all and (min-width: 45em) {
     .extra-gutter-left {
       padding-left: 1rem;
@@ -696,6 +715,10 @@ a.paragraph-link {
   float: left;
   display: inline-block;
   padding-bottom: 3rem; }
+  .ie-lt-9 {
+    width: 50%;
+    display: inline-block;
+    float: left; }
   @media all and (min-width: 45em) {
     .portfolio li {
       width: 50%;
@@ -722,6 +745,15 @@ a.paragraph-link {
       margin-start: 0;
       padding-left: 25%;
       font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif"; }
+  .ie-lt-9 dl {
+    float: left;
+    width: 50%; }
+    .ie-lt-9 dl .first {
+      margin-right: 1rem;
+      margin-left: 0.4rem; }
+    .ie-lt-9 dl .last {
+      margin-left: 1rem;
+      margin-right: 0.4rem; }
   @media all and (min-width: 45em) {
     .quotes dl {
       float: left;
@@ -732,10 +764,16 @@ a.paragraph-link {
       .quotes dl .last {
         margin-left: 1rem;
         margin-right: 0.4rem; } }
+  .ie-lt-9 dl {
+    padding-bottom: 0rem; }
   @media all and (min-width: 60em) {
     .quotes dl {
       padding-bottom: 0rem; } }
 
+.ie-lt-9 .contact ul {
+  text-align: center; }
+  .ie-lt-9 .contact ul li {
+    width: 23%; }
 @media all and (min-width: 60em) {
   .contact ul {
     text-align: center; }
@@ -744,6 +782,9 @@ a.paragraph-link {
 .page {
   margin: 0 1rem;
   clear: both; }
+  .ie-lt-9 {
+    max-width: 960px;
+    margin: 0 auto; }
   @media all and (min-width: 60em) {
     .page {
       max-width: 960px;
@@ -759,6 +800,8 @@ section:after {
   position: absolute;
   left: 50%;
   margin-left: -16px; }
+.ie-lt-9:after {
+  display: none; }
 @media all and (min-width: 45em) {
   section:after {
     display: none; } }

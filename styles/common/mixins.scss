@@ -19,6 +19,7 @@
 
 @mixin gradient-vertical($from, $to) {
 	// Based on https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
+
 	background-color: $from;
 	background-image: -moz-linear-gradient(top, $from, $to); // FF 3.6+
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to)); // Safari 4+, Chrome 2+

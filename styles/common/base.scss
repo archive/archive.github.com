@@ -6,6 +6,11 @@ $base-font-color: #262626;
 	@include prefix(box-sizing, border-box);
 }
 
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	@include prefix(font-smoothing, antialiased);
 	@include prefix(text-size-adjust, 100%);
@@ -73,17 +78,6 @@ p, figcaption, dd, dt {
 
 li {
 	@include font(1.4);
-}
-
-.indiana-jones-browser {
-	background-color: #FF5555;
-	color: #ffffff;
-	border-top: 1px
-	solid #FF0D0D;
-	padding: 40px 10px;
-	margin-top: 80px;
-	text-align: center;
-	font-size: 28px;
 }
 
 ul, ol, figure {

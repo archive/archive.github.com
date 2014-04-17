@@ -10,6 +10,7 @@
 		border-radius: 4px;
 		color: #fff;
 		text-shadow: 0 1px rgba(0,0,0,0.1);
+		background-color: #07827a; // fallback
 		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
 
 		&:nth-child(1n+1) {

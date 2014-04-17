@@ -20,18 +20,13 @@
 </head>
 <body>
 
-	<!--
-		Wowo, how nice to see you!
-		 _______   _______   ______    _______   _
-		(  ____ \ (  ___  ) (  __  \  (  ____ \ ( )
-		| (    \/ | (   ) | | (  \  ) | (    \/ | |
-		| |       | |   | | | |   ) | | (__     | |
-		| |       | |   | | | |   | | |  __)    | |
-		| |       | |   | | | |   ) | | (       (_)
-		| (____/\ | (___) | | (__/  ) | (____/\  _
-		(_______/ (_______) (______/  (_______/ (_)
+	<span id="media-queries-enabled" class="media-queries-enabled"></span>
 
-	-->
+	<script type="text/javascript">
+		if (document.getElementById('media-queries-enabled').offsetWidth !== 0) {
+			document.writeln('<div class="indiana-jones-browser">Wow, you are using a really old browser! Only Indian Jones is interested in stuff like this. <br>Please visit <a href="http://browsehappy.com/">http://browsehappy.com/</a> to understand why you should upgrade.</div>');
+		}
+	</script>
 
 	<div class="border-top">
 		<div class="aaa"></div>
@@ -60,6 +55,19 @@
 				Hi! I'm Anders, a <b>web developer</b> with a great passion for <b>web</b> and <b>agile</b>. I help companies create robust, flexible and easy to maintain web applications. I also <b>coach</b> teams in <b>agile methodologies</b> and <b>development practices</b>. Sounds interesting? <a href="#contact" class="paragraph-link">Let's have a talk!</a>
 			</h2>
 		</article>
+
+		<!--
+		Wowo, how nice to see you!
+		 _______   _______   ______    _______   _
+		(  ____ \ (  ___  ) (  __  \  (  ____ \ ( )
+		| (    \/ | (   ) | | (  \  ) | (    \/ | |
+		| |       | |   | | | |   ) | | (__     | |
+		| |       | |   | | | |   | | |  __)    | |
+		| |       | |   | | | |   ) | | (       (_)
+		| (____/\ | (___) | | (__/  ) | (____/\  _
+		(_______/ (_______) (______/  (_______/ (_)
+
+		-->
 
 		<article class="values">
 			<h2>
@@ -191,13 +199,6 @@
 
 	</section>
 
-	<span class="media-queries-enabled"></span>
-
-	<script type="text/javascript">
-		if (document.getElementById('media-queries-enabled').offsetWidth !== 0) {
-			document.writeln('<div class="indiana-jones-browser">Wow, you are using a really old browser! Only Indian Jones is interested in stuff like this. <br>Please visit <a href="http://browsehappy.com/">http://browsehappy.com/</a> to understand more why you should upgrade.</div>');
-		}
-	</script>
 
 	<div class="me">
 		<a rel="author" href="https://plus.google.com/116971630018107256797/">google+</a>

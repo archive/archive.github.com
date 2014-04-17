@@ -10,6 +10,10 @@ $breakpoints: (
 
 @mixin media($breakpoint) {
 
+	@at-root .ie-lt-9 {
+		@content;
+	}
+
 	@media all and (min-width: #{map-get($breakpoints, $breakpoint)}) {
 		@content;
 	}
@@ -29,8 +33,12 @@ $breakpoints: (
 	}
 }
 
-/*.ie-lt-9 {
-	@include mq1;
-	@include mq2;
-	@include mq3;
-}*/
+.indiana-jones-browser {
+	background-color: #FF5555;
+	color: #ffffff;
+	border-top: 1px
+	solid #FF0D0D;
+	padding: 40px 10px;
+	text-align: center;
+	font-size: 28px;
+}
