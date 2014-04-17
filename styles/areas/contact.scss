@@ -1,9 +1,16 @@
-@include media(xtraLarge) {
-	.contact {
-		ul {
-			text-align: center;
+.contact {
+	&-list {
+		text-align: center;
 
-			li {
+		li {
+
+			width: 90%;
+
+			@include media(medium) {
+				width: auto;
+			}
+
+			@include media(xtraLarge) {
 				width: 23%;
 			}
 		}

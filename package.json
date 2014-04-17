@@ -21,7 +21,8 @@
     "browserify": "~3.30.1",
     "gulp": "~3.5.2",
     "gulp-ruby-sass": "~0.3.0",
-    "gulp-browserify": "~0.4.5"
+    "gulp-browserify": "~0.4.5",
+    "gulp-util": "~2.2.14"
   },
   "devDependencies": {
     "csslint": "~0.10.0",

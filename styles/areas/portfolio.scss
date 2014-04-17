@@ -1,0 +1,51 @@
+.portfolio {
+
+	&-list {
+		overflow: hidden;
+
+		&-item {
+			width: 100%;
+			float: left;
+			/*display: inline-block;*/
+			padding-bottom: 3rem;
+
+			@include media(large) {
+				width: 50%;
+				/*display: inline-block;*/
+				float: left;
+			}
+
+			&-figure {
+				display: block;
+				width: 100%;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+
+			&-right {
+				padding-right: 0;
+				padding-left: 0;
+				clear: both;
+
+				@include media(large) {
+					padding-right: 1rem;
+					padding-left: 0.3rem;
+				}
+			}
+
+			&-left {
+				padding-left: 0;
+				padding-right: 0;
+
+				@include media(large) {
+					padding-left: 1rem;
+					padding-right: 0.3rem;
+				}
+			}
+		}
+	}
+
+}

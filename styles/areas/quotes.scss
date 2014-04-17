@@ -1,8 +1,7 @@
-
 .quotes {
 	overflow: hidden;
 
-	dl {
+	&-item {
 		padding-bottom: 3rem;
 
 		dt {
@@ -10,33 +9,28 @@
 		}
 
 		dd {
-			@include prefix(margin-start, 0);
 			padding-left: 25%;
 			font-family: $sans-serif;
 		}
-	}
 
-	@include media(large) {
-		dl {
+		@include media(large) {
 			float: left;
 			width: 50%;
 
-			.first {
+			&-one {
 				margin-right: 1rem;
 				margin-left: 0.4rem;
 			}
 
-			.last {
+			&-two {
 				margin-left: 1rem;
 				margin-right: 0.4rem;
 			}
 		}
-	}
 
-	@include media(xtraLarge) {
-		dl {
-			padding-bottom: 0rem;
+		@include media(xtraLarge) {
+			padding-bottom: 0;
 		}
-	}
 
+	}
 }

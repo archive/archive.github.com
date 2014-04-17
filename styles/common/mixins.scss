@@ -1,20 +1,18 @@
-@mixin prefix($property, $value) {
+@mixin prefix($property, $value, $safe: true) {
 	-webkit-#{$property}: $value;
 	-moz-#{$property}: $value;
 	-ms-#{$property}: $value;
 	-o-#{$property}: $value;
-	#{$property}: $value;
+
+	@if $safe {
+		#{$property}: $value;
+	}
 }
 
 // Change to https://github.com/bitmanic/rem?
 @mixin rem($property, $remValue) {
 	#{$property}: ($remValue * 10) + px;
 	#{$property}: $remValue + rem;
-}
-
-@mixin justify {
-	text-align:justify;
-	@include prefix(hyphens, auto);
 }
 
 @mixin gradient-vertical($from, $to) {

@@ -1,6 +1,7 @@
 @import "common/colors";
 @import "common/breakpoints";
 @import "common/mixins";
+@import "common/typography";
 @import "common/base";
 
 @import "components/colored-list";
@@ -9,9 +10,8 @@
 
 @import "areas/header";
 @import "areas/about";
-@import "areas/passion";
-@import "areas/recent";
+@import "areas/portfolio";
 @import "areas/quotes";
 @import "areas/contact";
 
-@import "layout/index";
+@import "pages/index";

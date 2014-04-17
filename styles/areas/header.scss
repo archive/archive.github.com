@@ -1,58 +1,59 @@
-.border-top {
+.header {
 	height: 10px;
 	width: 100%;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: left;
 	margin: 0;
-	background-color: $aaa;
+	background-color: $color_a;
 	border-bottom: 1px solid #e9e9e9;
-
-
-
-	&.extra {
-		display: none;
-	}
-
-	div {
-		height: 100%;
-		display: inline-block;
-		float: left;
-
-		&.aaa {
-			@include gradient-vertical($aaa_,$aaa);
-			width: 15%;
-		}
-
-		&.bbb {
-			@include gradient-vertical($bbb_,$bbb);
-			width: 25%;
-		}
-
-		&.ccc {
-			@include gradient-vertical($ccc_,$ccc);
-			width: 30%;
-		}
-
-		&.ddd {
-			@include gradient-vertical($ddd_,$ddd);
-			width: 20%;
-		}
-
-		&.eee {
-			@include gradient-vertical($eee_,$eee);
-			width: 10%;
-		}
-	}
 
 	@include media(large) {
 		width: 50%;
-
-		&.extra {
-			display: block;
-		}
 	}
 }
 
-a.paragraph-link {
-	color: $base-font-color;
+.header {
+	&-extra {
+		display: none;
+
+		@include media(large) {
+			display: block;
+		}
+	}
+
+	%header-color {
+		height: 100%;
+		/*display: inline-block;*/
+		float: left;
+	}
+
+	&-color-a {
+		@extend %header-color;
+		@include gradient-vertical($color_a_lighter,$color_a);
+		width: 15%;
+	}
+
+	&-color-b {
+		@extend %header-color;
+		@include gradient-vertical($color_b_lighter,$color_b);
+		width: 25%;
+	}
+
+	&-color-c {
+		@extend %header-color;
+		@include gradient-vertical($color_c_lighter,$color_c);
+		width: 30%;
+	}
+
+	&-color-d {
+		@extend %header-color;
+		@include gradient-vertical($color_d_lighter,$color_d);
+		width: 20%;
+	}
+
+	&-color-e {
+		@extend %header-color;
+		@include gradient-vertical($color_e_lighter,$color_e);
+		width: 10%;
+	}
 }

@@ -14,22 +14,31 @@
 		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
 
 		&:nth-child(1n+1) {
-			@include gradient-vertical($aaa_,$aaa);
+			@include gradient-vertical($color_a_lighter, $color_a);
 		}
+
 		&:nth-child(2n+2) {
-			@include gradient-vertical($bbb_,$bbb);
+			@include gradient-vertical($color_b_lighter, $color_b);
 		}
+
 		&:nth-child(3n+3) {
-			@include gradient-vertical($ccc_,$ccc);
+			@include gradient-vertical($color_c_lighter, $color_c);
 		}
+
 		&:nth-child(4n+4) {
-			@include gradient-vertical($ddd_,$ddd);
+			@include gradient-vertical($color_d_lighter, $color_d);
 		}
+
 		&:nth-child(5n+5) {
-			@include gradient-vertical($eee_,$eee);
+			@include gradient-vertical($color_e_lighter, $color_e);
 			a {
 				color: #313131;
 			}
+		}
+
+		@include media(medium) {
+			padding: 0.6rem 1.6rem;
+			margin: 0.6rem 0.5rem;
 		}
 	}
 
@@ -37,11 +46,5 @@
 		color: #fff;
 	}
 
-	@include media(medium) {
-		li {
-			padding: 0.6rem 1.6rem;
-			margin: 0.6rem 0.5rem;
-		}
-	}
 }
 

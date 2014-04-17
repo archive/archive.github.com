@@ -9,15 +9,13 @@ $breakpoints: (
 );
 
 @mixin media($breakpoint) {
-
-	@at-root .ie-lt-9 {
+	/*@at-root .ie-lt-9 {
 		@content;
-	}
+	}*/
 
 	@media all and (min-width: #{map-get($breakpoints, $breakpoint)}) {
 		@content;
 	}
-
 }
 
 .media-queries-enabled {
