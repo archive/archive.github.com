@@ -19,7 +19,7 @@
 	"overqualified-elements": true,
 	"ids": true,
 	"important": true,
-	"qualified-headings": true,
+	"qualified-headings": false,
 
 	"duplicate-properties": false,
 	"box-sizing": false,
