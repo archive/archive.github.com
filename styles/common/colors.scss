@@ -1,17 +1,16 @@
 $lightenPercent: 3%;
 
-$color_a: #053B44;
-$color_a-lighter: lighten($color_a, $lightenPercent);
+$color-a: #F35844;
+$color-a-lighter: lighten($color-a, $lightenPercent);
 
-$color_b: #06736C;
-$color_b-lighter: lighten($color_b, $lightenPercent);
+$color-b: #F39B44;
+$color-b-lighter: lighten($color-b, $lightenPercent);
 
-$color_c: #A53539;
-$color_c-lighter: lighten($color_c, $lightenPercent);
+$color-c: #2D8296;
+$color-c-lighter: lighten($color-c, $lightenPercent);
 
-$color_d: #B9543C;
-$color_d-lighter: lighten($color_d, $lightenPercent);
+$color-d: #33B655;
+$color-d-lighter: lighten($color-d, $lightenPercent);
 
-$color_e: #EAD075;
-$color_e-lighter: lighten($color_e, $lightenPercent);
-
+$color-gray: #383838;
+$color-gray-lighter: #F0F0F0;

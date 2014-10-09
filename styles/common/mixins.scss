@@ -9,12 +9,6 @@
 	}
 }
 
-// Change to https://github.com/bitmanic/rem?
-@mixin rem($property, $remValue) {
-	#{$property}: ($remValue * 10) + px;
-	#{$property}: $remValue + rem;
-}
-
 @mixin gradient-vertical($from, $to) {
 	// Based on https://github.com/thomas-mcdonald/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_mixins.scss
 
@@ -29,6 +23,6 @@
 }
 
 @mixin font ($size) {
-	@include rem(font-size, $size);
-	@include rem(line-height, $size * 1.618);
+	font-size: #{$size}rem;
+	line-height: 1.54;
 }

@@ -21,16 +21,7 @@ h1, h2 {
 	text-shadow: #FFFFFF 0 2px 0;
 	font-weight: 400;
 	color: $base-font-color;
-}
 
-h1 {
-	@include font(2.8);
-	text-align: center;
-	@include rem(padding-top, 2);
-	@include rem(margin-bottom, 2);
-}
-
-h2 {
 	@include font(2);
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -54,4 +45,9 @@ a {
 		text-decoration: none;
 		color: $base-font-color;
 	}
+}
+
+small {
+	@include font(1.2);
+	font-family: $sans-serif;
 }

@@ -14,26 +14,19 @@
 		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
 
 		&:nth-child(1n+1) {
-			@include gradient-vertical($color_a_lighter, $color_a);
+			@include gradient-vertical($color-a_lighter, $color-a);
 		}
 
 		&:nth-child(2n+2) {
-			@include gradient-vertical($color_b_lighter, $color_b);
+			@include gradient-vertical($color-b_lighter, $color-b);
 		}
 
 		&:nth-child(3n+3) {
-			@include gradient-vertical($color_c_lighter, $color_c);
+			@include gradient-vertical($color-c_lighter, $color-c);
 		}
 
 		&:nth-child(4n+4) {
-			@include gradient-vertical($color_d_lighter, $color_d);
-		}
-
-		&:nth-child(5n+5) {
-			@include gradient-vertical($color_e_lighter, $color_e);
-			a {
-				color: #313131;
-			}
+			@include gradient-vertical($color-d_lighter, $color-d);
 		}
 
 		@include media(medium) {

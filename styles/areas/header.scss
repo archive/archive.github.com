@@ -3,7 +3,7 @@
 	width: 100%;
 	float: left;
 	margin: 0;
-	background-color: $color_a;
+	background-color: $color-a;
 	border-bottom: 1px solid #e9e9e9;
 
 	@include media(large) {
@@ -27,31 +27,25 @@
 
 	&-color-a {
 		@extend %header-color;
-		@include gradient-vertical($color_a_lighter,$color_a);
-		width: 15%;
+		@include gradient-vertical($color-a_lighter,$color-a);
+		width: 17%;
 	}
 
 	&-color-b {
 		@extend %header-color;
-		@include gradient-vertical($color_b_lighter,$color_b);
-		width: 25%;
+		@include gradient-vertical($color-b_lighter,$color-b);
+		width: 27%;
 	}
 
 	&-color-c {
 		@extend %header-color;
-		@include gradient-vertical($color_c_lighter,$color_c);
-		width: 30%;
+		@include gradient-vertical($color-c_lighter,$color-c);
+		width: 33%;
 	}
 
 	&-color-d {
 		@extend %header-color;
-		@include gradient-vertical($color_d_lighter,$color_d);
-		width: 20%;
-	}
-
-	&-color-e {
-		@extend %header-color;
-		@include gradient-vertical($color_e_lighter,$color_e);
-		width: 10%;
+		@include gradient-vertical($color-d_lighter,$color-d);
+		width: 23%;
 	}
 }
