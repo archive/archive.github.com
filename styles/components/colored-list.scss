@@ -10,22 +10,22 @@
 		border-radius: 4px;
 		color: #fff;
 		text-shadow: 0 1px rgba(0,0,0,0.1);
-		background-color: #07827a; // fallback
+		background-color: $color-c; // fallback
 		@include prefix(box-shadow, 1px 1px 2px #D6D7D0);
 
-		&:nth-child(1n+1) {
+		&:nth-of-type(1n) {
 			@include gradient-vertical($color-a_lighter, $color-a);
 		}
 
-		&:nth-child(2n+2) {
+		&:nth-of-type(2n) {
 			@include gradient-vertical($color-b_lighter, $color-b);
 		}
 
-		&:nth-child(3n+3) {
+		&:nth-of-type(3n) {
 			@include gradient-vertical($color-c_lighter, $color-c);
 		}
 
-		&:nth-child(4n+4) {
+		&:nth-of-type(4n) {
 			@include gradient-vertical($color-d_lighter, $color-d);
 		}
 

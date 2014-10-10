@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var sassStyle = 'compressed';
 
-gulp.task('default', ['csslint', 'sass'], function(){
+gulp.task('default', ['sass'], function(){
 });
 
 var sass = require('gulp-ruby-sass');

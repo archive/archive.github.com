@@ -102,18 +102,21 @@ li {
   .area b {
     color: #383838; }
 
-.logo {
-  max-width: 30rem;
+.logo-wrapper {
+  max-width: 28rem;
   margin: 0 auto;
-  padding: 2rem 0 1.5rem 0;
-  display: block; }
+  display: block;
+  padding: 2rem 0 1.5rem 0; }
   @media all and (min-width: 25em) {
-    .logo {
-      max-width: 40rem;
+    .logo-wrapper {
+      max-width: 35rem;
       padding: 4rem 0 2rem 0; } }
-  .ie-lt-9 .logo {
-    max-width: 40rem;
+  .ie-lt-9 .logo-wrapper {
+    max-width: 35rem;
     padding: 4rem 0 2rem 0; }
+
+.logo {
+  width: 100%; }
 
 .colored-list {
   padding: 0;
@@ -141,7 +144,7 @@ li {
       background-image: linear-gradient(to bottom, #f46552, #f35844);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF46552', endColorstr='#FFF35844', GradientType=0); }
-    .colored-list li:nth-child(2n+2) {
+    .colored-list li:nth-child(2n+1) {
       background-color: #f4a352;
       background-image: -moz-linear-gradient(top, #f4a352, #f39b44);
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4a352), to(#f39b44));
@@ -150,7 +153,7 @@ li {
       background-image: linear-gradient(to bottom, #f4a352, #f39b44);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF4A352', endColorstr='#FFF39B44', GradientType=0); }
-    .colored-list li:nth-child(3n+3) {
+    .colored-list li:nth-child(3n+1) {
       background-color: #318ca2;
       background-image: -moz-linear-gradient(top, #318ca2, #2d8296);
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#318ca2), to(#2d8296));
@@ -159,7 +162,7 @@ li {
       background-image: linear-gradient(to bottom, #318ca2, #2d8296);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF318CA2', endColorstr='#FF2D8296', GradientType=0); }
-    .colored-list li:nth-child(4n+4) {
+    .colored-list li:nth-child(4n+1) {
       background-color: #36c25b;
       background-image: -moz-linear-gradient(top, #36c25b, #33b655);
       background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#36c25b), to(#33b655));
