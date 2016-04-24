@@ -1,0 +1,25 @@
+{
+  "name": "archive.github.com",
+  "version": "1.0.0",
+  "description": "[28symbols](http://www.28symbols.com/ \"28symbols\")",
+  "main": "index.html",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csslint": "^0.3.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-util": "^3.0.7"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archive/archive.github.com.git"
+  },
+  "author": "Anders Jönsson",
+  "bugs": {
+    "url": "https://github.com/archive/archive.github.com/issues"
+  },
+  "homepage": "https://github.com/archive/archive.github.com#readme"
+}
