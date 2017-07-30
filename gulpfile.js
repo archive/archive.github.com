@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
-const sassStyle = 'compressed';
+let sassStyle = 'compressed';
 const csslint = require('gulp-csslint');
 const eslint = require('gulp-eslint');
 
@@ -19,7 +19,7 @@ gulp.task('csslint', () => {
   return gulp.src('./styles/app-imports.scss')
     .pipe(sass())
     .pipe(csslint('.csslintrc'))
-    .pipe(csslint.reporter());
+    .pipe(csslint.formatter());
 });
 
 gulp.task('eslint', function () {

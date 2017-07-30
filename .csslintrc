@@ -30,5 +30,6 @@
 	"unique-headings": false,
 	"font-sizes": false,
 	"box-model": false,
-	"floats": false
+	"floats": false,
+	"order-alphabetical": false
 }
