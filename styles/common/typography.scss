@@ -27,7 +27,7 @@ h1, h2 {
 	padding-bottom: 0;
 
 	@include media(large) {
-		@include font(2.2);
+		@include font(2);
 	}
 }
 
