@@ -4,11 +4,11 @@
   "description": "[28symbols](http://www.28symbols.com/ \"28symbols\")",
   "main": "index.html",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-csslint": "^1.0.1",
-    "gulp-eslint": "^4.0.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-util": "^3.0.8"
+    "gulp": "^4.0.0",
+    "gulp-csslint": "*",
+    "gulp-eslint": "*",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "*"
   },
   "dependencies": {},
   "scripts": {
