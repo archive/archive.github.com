@@ -30,7 +30,7 @@ const loadGa = () => {
 
 const pleaseUpgradeYourBrowserInfo = () => {
   if (document.getElementById('media-queries-enabled').offsetWidth !== 0) {
-    var message = '<div class="indiana-jones-browser">Wow, you are using a really old browser! Only Indian Jones is interested in stuff like this. <br>Please visit <a href="http://browsehappy.com/">http://browsehappy.com/</a> to understand why you should upgrade.</div>';
+    var message = '<div class="indiana-jones-browser">Wow, you are using a really old browser! Only Indian Jones is interested in stuff like this. <br>Please visit <a href="https://browsehappy.com/">https://browsehappy.com/</a> to understand why you should upgrade.</div>';
     document.getElementById('indiana-jones-browser').innerHTML = message;
   }
 };

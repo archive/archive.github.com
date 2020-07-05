@@ -1,7 +1,7 @@
 {
   "name": "archive.github.com",
   "version": "1.0.0",
-  "description": "[28symbols](http://www.28symbols.com/ \"28symbols\")",
+  "description": "[28symbols](https://www.28symbols.com/ \"28symbols\")",
   "main": "index.html",
   "devDependencies": {
     "gulp": "^4.0.0",
