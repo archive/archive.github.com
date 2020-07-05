@@ -1,1 +1,1 @@
- [28symbols](https://www.28symbols.com/ "28symbols")
+ [28symbols](https://28symbols.com/ "28symbols")
